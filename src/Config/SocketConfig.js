@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 //     return ;
 // }
 
-const Socket = io('http://localhost:5000/')
+const Socket = io(process.env.REACT_APP_API_BASE_URL)
 
  
 export {Socket}

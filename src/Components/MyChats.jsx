@@ -21,7 +21,7 @@ export const MyChats = () => {
                     Authorization: `Bearer ${user.token}`,
                 },
             };
-            const { data } = await axios.get('api/chat', Config);
+            const { data } = await axios.get('/api/chat', Config);
             setChats(data);
         } catch (error) {
             console.error(error.message);
